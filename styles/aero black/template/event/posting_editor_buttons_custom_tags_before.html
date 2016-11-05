@@ -1,0 +1,4 @@
+<!-- IF SCRIPT_NAME == "posting" -->
+		<script>function toggle_tables_button_selections() { var x = document.getElementById('tables-button-selections'); if (x.style.display === 'block') { x.style.display = 'none';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_SHOW}';document.getElementById('tables-button-guidelines-button').value = '{L_TABLE_GUIDELINES_SHOW}';document.getElementById('tables-button-guidelines').style.display = 'none'; } else { x.style.display = 'block';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_HIDE}'; } }</script>
+			<input id="tables-button-switch" class="button2" name="tables_selections" value="Tables" onclick="toggle_tables_button_selections();" title="{L_TABLE_SELECTIONS_SHOW}" type="button" />
+<!-- ENDIF -->

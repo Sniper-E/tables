@@ -1,0 +1,5 @@
+services:
+    sniper.tables.listener:
+        class: sniper\tables\event\listener
+        tags:
+            - { name: event.listener }

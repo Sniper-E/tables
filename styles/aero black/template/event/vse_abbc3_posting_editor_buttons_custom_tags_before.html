@@ -1,0 +1,4 @@
+<!-- IF SCRIPT_NAME == "posting" -->
+		<script>function toggle_tables_abbc3_selections() { var x = document.getElementById('tables-abbc3-selections'); if (x.style.display === 'block') { x.style.display = 'none';document.getElementById('tables-abbc3-switch').title = '{L_TABLE_SELECTIONS_SHOW}';document.getElementById('tables-abbc3-guidelines-button').value = '{L_TABLE_GUIDELINES_SHOW}';document.getElementById('tables-abbc3-guidelines').style.display = 'none'; } else { x.style.display = 'block';document.getElementById('tables-abbc3-switch').title = '{L_TABLE_SELECTIONS_HIDE}'; } }</script>
+			<input id="tables-abbc3-switch" class="abbc3_button responsive-hide" name="tables_selections" value="" onclick="toggle_tables_abbc3_selections();" title="{L_TABLE_SELECTIONS_SHOW}" style="background-image:url('./ext/sniper/tables/styles/all/theme/images/table.gif');" type="button" />
+<!-- ENDIF -->

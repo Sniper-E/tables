@@ -1,0 +1,27 @@
+{
+	"name": "sniper/tables",
+	"type": "phpbb-extension",
+	"description": "Inserts a table block in your post.",
+	"homepage": "http://www.sniper-e.com",
+	"version": "2.0.7",
+	"time": "2015-01-01",
+	"keywords": ["phpbb", "extension", "tables"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Sniper_E",
+			"email": "sniper@sniper-e.com",
+			"homepage": "http://www.sniper-e.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Tables",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.2-RC1"
+		}
+	}
+}
