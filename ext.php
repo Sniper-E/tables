@@ -1,30 +1,17 @@
 <?php
 /**
-*
-* Tables BBCode Extension
-* @author (c) 2015 Sniper_E - http://www.sniper-e.com
-*
-* @license		GNU General Public License, version 2 (GPL-2.0)
-*
+* @ package phpBB Extension - Tables
+* @ copyright (c) 2015 Sniper_E - http://sniper-e.com
+* @ license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
 namespace sniper\tables;
 
-/**
-* Extension class for custom enable/disable/purge actions
-*/
-
 class ext extends \phpbb\extension\base
 {
-	/**
-	* Enable extension if phpBB version requirement is met
-	*
-	* @return bool
-	* @access public
-	*/
 	public function is_enableable()
 	{
 		$config = $this->container->get('config');
-		return version_compare($config['version'], '>=3.1.2-RC1');
+		return version_compare($config['version'], '>=3.2.0');
 	}
 }

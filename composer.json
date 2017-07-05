@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Inserts a table block in your post.",
 	"homepage": "http://www.sniper-e.com",
-	"version": "2.0.7",
+	"version": "2.1.1",
 	"time": "2015-01-01",
 	"keywords": ["phpbb", "extension", "tables"],
 	"license": "GPL-2.0",
@@ -21,7 +21,7 @@
 	"extra": {
 		"display-name": "Tables",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.2-RC1"
+			"phpbb/phpbb": ">=3.2.0"
 		}
 	}
 }
