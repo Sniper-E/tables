@@ -1,0 +1,24 @@
+/* Tables bbCode Extension  */
+
+/* Table background color (optional) */
+.tables1 { }
+.tables1 img { vertical-align: middle; }
+.tables1 i.fa-fw { cursor: pointer; }
+
+/* Hiden selections block */
+#tables-button-selections { width: 80%;display: none; }
+.upper_group { width: 65px;display: inline-block;wrap: wrap; }
+.lower_group { width: 65px;display: inline-block;wrap: wrap; }
+
+/* Tables custom classes - Add all classes for every cell needed */
+.null { }
+.tleft { float: left;margin-right: 6px; }
+.tright { float: right;margin-left: 6px; }
+.tcenter { margin: 0 auto; }
+.textleft { text-align: left; }
+.textcenter { text-align: center; }
+.textright { text-align: right; }
+
+@media (max-width: 900px) {
+	#tables-button-selections { width: 100%;display: none; }
+}
