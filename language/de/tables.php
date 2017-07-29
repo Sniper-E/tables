@@ -28,6 +28,7 @@ $lang = array_merge(
 *
 * Buttons Titles for Selections and Guidelines
 */
+		'TABLES_TITLE'				=> 'Tabelle',
 		'TABLE_TITLE'				=> 'Tabellenauswahl',
 		'TABLE_SELECTIONS_SHOW'		=> 'Tabellenauswahl anzeigen',
 		'TABLE_SELECTIONS_HIDE'		=> 'Wähle eine Tabelle',

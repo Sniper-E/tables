@@ -18,14 +18,13 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-
-$lang = array_merge(
-	$lang, array(
+$lang = array_merge($lang, array(
 /**
 * Tables - English Language
 *
 * Buttons Titles for Selections and Guidelines
 */
+		'TABLES_TITLE'				=> 'Tables',
 		'TABLE_TITLE'				=> 'Table Selections',
 		'TABLE_SELECTIONS_SHOW'		=> 'Show Table Selections',
 		'TABLE_SELECTIONS_HIDE'		=> 'Select a Table',

@@ -1,16 +1,20 @@
 /* Tables bbCode Extension  */
 
 /* Table background color (optional) */
-.tables1 { background-color: #D8D8D8; }
+.tables1 { }
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
-.postingbuttons img { margin-bottom: 2px; }
+.abbc3_button img { vertical-align: middle; }
+.postingbuttons img { margin-top: 3px; }
 
 /* Hiden selections block */
-#tables-button-selections { width: 100%;display: none; }
-#tables-postingbuttons-switch.postingbuttons { vertical-align: middle; }
-.upper_group { width: 65px;display: inline-block;wrap: wrap; }
-.lower_group { width: 65px;display: inline-block;wrap: wrap; }
+#acp-tables-button-selections { width: 100%;display: none; }
+#acp-tables-postingbuttons-switch.postingbuttons { vertical-align: middle;background-color: #dfdfdf; }
+#acp-tables-button-switch.button2 { height: 22px;vertical-align: middle; }
+.upper_group { width: 80px;display: inline-block;wrap: wrap; }
+.lower_group { width: 80px;display: inline-block;wrap: wrap; }
+.upper_group i { margin-right: 3px; }
+.lower_group i { margin-right: 3px; }
 
 /* Tables custom classes - Add all classes for every cell needed */
 .null { }
@@ -27,6 +31,14 @@
 .border-rbl { border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
 .border-rb { border-right: 1px solid #999;border-bottom: 1px solid #999; }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 	#tables-button-selections { width: 100%;display: none; }
+}
+
+.bg1 {
+	background-color: #ECF3F7;
+}
+
+.bg2 {
+	background-color: #E1EBF2;
 }
