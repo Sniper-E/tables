@@ -19,6 +19,12 @@
 .textcenter { text-align: center; }
 .textright { text-align: right; }
 
+/* Classes for cell borders */
+.border-trbl { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
+.border-trb { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999; }
+.border-rbl { border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
+.border-rb { border-right: 1px solid #999;border-bottom: 1px solid #999; }
+
 @media (max-width: 900px) {
 	#tables-button-selections { width: 100%;display: none; }
 }
