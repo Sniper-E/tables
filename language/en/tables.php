@@ -5,9 +5,6 @@
 * @ license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
-/**
-* DO NOT CHANGE
-*/
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -18,92 +15,107 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
+/**
+* DO NOT CHANGE ABOVE
+*/
+
 $lang = array_merge($lang, array(
 /**
-* Tables - English Language
+* English
 *
-* Buttons Titles for Selections and Guidelines
+* Button titles for selections and guidelines
 */
 		'TABLES_TITLE'				=> 'Tables',
-		'TABLE_TITLE'				=> 'Table Selections',
-		'TABLE_SELECTIONS_SHOW'		=> 'Show Table Selections',
-		'TABLE_SELECTIONS_HIDE'		=> 'Select a Table',
-		'TABLE_GUIDELINES_SHOW'		=> '<strong>Show Table Guidelines</strong>',
-		'TABLE_GUIDELINES'			=> '<strong>Table Guidelines:</strong> [table=75,null] The number 75 sets the width% of a table. [table=75,tleft] The tleft floats the table left of the text. Use null, tleft, tright or tcenter. When using tcenter in the table, use [center] around the Table Title for it to line up. Max width% of table is 98%. [th=20,null], [th=30,null], [th=50,null] The numbers sets width% of each column. All [th=#% need to equal 100%. [td=null,1] The null is a class, use bg1, bg2, or any and the 1 sets the colspan of the [td]. If [td=null,2] is used you must remove one of the other [td=null,1] to make room for the 2 column. [tr=bg2] sets the class of the row. <br /><strong>Instructions:</strong> Click the Preview button after inserting your table codes in textarea. From your preview, edit all of the Title names and Text areas to suit your post. Adjust all the width% to balance out the look of your table, Preview and Submit.',
+		'TABLE_TITLE'				=> 'Table selections',
+		'TABLE_SELECTIONS_SHOW'		=> 'Show table selections',
+		'TABLE_SELECTIONS_HIDE'		=> 'Select a table',
+		'TABLE_GUIDELINES_SHOW'		=> '<strong>Show table guidelines</strong>',
+		'TABLE_GUIDELINES'			=> '<strong>Table guidelines:</strong> [table=75,null] The number 75 sets the width% of a table. [table=75,tleft] The tleft floats the table left of the text. Use null, tleft, tright or tcenter. When using tcenter in the table, use [center] around the Table Title for it to line up. Max width% of table is 98%. [th=20,null], [th=30,null], [th=50,null] The numbers sets width% of each column. All [th=#% need to equal 100%. [td=null,1] The null is a blank class, use bg1, bg2, or any class. The 1 sets the colspan of the [td]. If [td=null,2] is used you must remove one of the other [td=null,1] to make room for the 2 column. [tr=bg2] sets the class of the row. <br /><strong>Instructions:</strong> Click the preview button after inserting your table codes in textarea. From your preview, edit all of the Title names and Text areas to suit your post. Adjust all the width% to balance out the look of your table, preview and submit.',
 /**
-* Selections Column Numbers
+* Titles by column numbers
 */
-		'COLUMN_ONE'			=> '1 Column',
-		'COLUMN_TWO'			=> '2 Columns',
-		'COLUMN_THREE'			=> '3 Columns',
-		'COLUMN_FOUR'			=> '4 Columns',
-		'COLUMN_FIVE'			=> '5 Columns',
-		'COLUMN_SIX'			=> '6 Columns',
+		'COLUMN_ONE'			=> '1 column',
+		'COLUMN_TWO'			=> '2 columns',
+		'COLUMN_THREE'			=> '3 columns',
+		'COLUMN_FOUR'			=> '4 columns',
+		'COLUMN_FIVE'			=> '5 columns',
+		'COLUMN_SIX'			=> '6 columns',
+		'COLUMN_SEVEN'			=> '7 columns',
 /**
-* Table Icon Selections Titles on Hover
+* Title on hove for table selections
 */
-		'TABLE11_TITLE'			=> 'Table - 1 Column - 1 Row',
-		'TABLE12_TITLE'			=> 'Table - 1 Column - 2 Rows',
-		'TABLE13_TITLE'			=> 'Table - 1 Column - 3 Rows',
-		'TABLE14_TITLE'			=> 'Table - 1 Column - 4 Rows',
-		'TABLE15_TITLE'			=> 'Table - 1 Column - 5 Rows',
-		'TABLE16_TITLE'			=> 'Table - 1 Column - 6 Rows',
-		'TABLE17_TITLE'			=> 'Table - 1 Column - 7 Rows',
-		'TABLE18_TITLE'			=> 'Table - 1 Column - 8 Rows',
-		'TABLE19_TITLE'			=> 'Table - 1 Column - 9 Rows',
-		'TABLE110_TITLE'		=> 'Table - 1 Column - 10 Rows',
-		'TABLE21_TITLE'			=> 'Table - 2 Columns - 1 Row',
-		'TABLE22_TITLE'			=> 'Table - 2 Columns - 2 Rows',
-		'TABLE23_TITLE'			=> 'Table - 2 Columns - 3 Rows',
-		'TABLE24_TITLE'			=> 'Table - 2 Columns - 4 Rows',
-		'TABLE25_TITLE'			=> 'Table - 2 Columns - 5 Rows',
-		'TABLE26_TITLE'			=> 'Table - 2 Columns - 6 Rows',
-		'TABLE27_TITLE'			=> 'Table - 2 Columns - 7 Rows',
-		'TABLE28_TITLE'			=> 'Table - 2 Columns - 8 Rows',
-		'TABLE29_TITLE'			=> 'Table - 2 Columns - 9 Rows',
-		'TABLE210_TITLE'		=> 'Table - 2 Columns - 10 Rows',
-		'TABLE31_TITLE'			=> 'Table - 3 Columns - 1 Row',
-		'TABLE32_TITLE'			=> 'Table - 3 Columns - 2 Rows',
-		'TABLE33_TITLE'			=> 'Table - 3 Columns - 3 Rows',
-		'TABLE34_TITLE'			=> 'Table - 3 Columns - 4 Rows',
-		'TABLE35_TITLE'			=> 'Table - 3 Columns - 5 Rows',
-		'TABLE36_TITLE'			=> 'Table - 3 Columns - 6 Rows',
-		'TABLE37_TITLE'			=> 'Table - 3 Columns - 7 Rows',
-		'TABLE38_TITLE'			=> 'Table - 3 Columns - 8 Rows',
-		'TABLE39_TITLE'			=> 'Table - 3 Columns - 9 Rows',
-		'TABLE310_TITLE'		=> 'Table - 3 Columns - 10 Rows',
-		'TABLE41_TITLE'			=> 'Table - 4 Columns - 1 Row',
-		'TABLE42_TITLE'			=> 'Table - 4 Columns - 2 Rows',
-		'TABLE43_TITLE'			=> 'Table - 4 Columns - 3 Rows',
-		'TABLE44_TITLE'			=> 'Table - 4 Columns - 4 Rows',
-		'TABLE45_TITLE'			=> 'Table - 4 Columns - 5 Rows',
-		'TABLE46_TITLE'			=> 'Table - 4 Columns - 6 Rows',
-		'TABLE47_TITLE'			=> 'Table - 4 Columns - 7 Rows',
-		'TABLE48_TITLE'			=> 'Table - 4 Columns - 8 Rows',
-		'TABLE49_TITLE'			=> 'Table - 4 Columns - 9 Rows',
-		'TABLE410_TITLE'		=> 'Table - 4 Columns - 10 Rows',
-		'TABLE51_TITLE'			=> 'Table - 5 Columns - 1 Row',
-		'TABLE52_TITLE'			=> 'Table - 5 Columns - 2 Rows',
-		'TABLE53_TITLE'			=> 'Table - 5 Columns - 3 Rows',
-		'TABLE54_TITLE'			=> 'Table - 5 Columns - 4 Rows',
-		'TABLE55_TITLE'			=> 'Table - 5 Columns - 5 Rows',
-		'TABLE56_TITLE'			=> 'Table - 5 Columns - 6 Rows',
-		'TABLE57_TITLE'			=> 'Table - 5 Columns - 7 Rows',
-		'TABLE58_TITLE'			=> 'Table - 5 Columns - 8 Rows',
-		'TABLE59_TITLE'			=> 'Table - 5 Columns - 9 Rows',
-		'TABLE510_TITLE'		=> 'Table - 5 Columns - 10 Rows',
-		'TABLE61_TITLE'			=> 'Table - 6 Columns - 1 Row',
-		'TABLE62_TITLE'			=> 'Table - 6 Columns - 2 Rows',
-		'TABLE63_TITLE'			=> 'Table - 6 Columns - 3 Rows',
-		'TABLE64_TITLE'			=> 'Table - 6 Columns - 4 Rows',
-		'TABLE65_TITLE'			=> 'Table - 6 Columns - 5 Rows',
-		'TABLE66_TITLE'			=> 'Table - 6 Columns - 6 Rows',
-		'TABLE67_TITLE'			=> 'Table - 6 Columns - 7 Rows',
-		'TABLE68_TITLE'			=> 'Table - 6 Columns - 8 Rows',
-		'TABLE69_TITLE'			=> 'Table - 6 Columns - 9 Rows',
-		'TABLE610_TITLE'		=> 'Table - 6 Columns - 10 Rows',
+		'TABLE11_TITLE'			=> 'Table - 1 column, 1 row',
+		'TABLE12_TITLE'			=> 'Table - 1 column, 2 rows',
+		'TABLE13_TITLE'			=> 'Table - 1 column, 3 rows',
+		'TABLE14_TITLE'			=> 'Table - 1 column, 4 rows',
+		'TABLE15_TITLE'			=> 'Table - 1 column, 5 rows',
+		'TABLE16_TITLE'			=> 'Table - 1 column, 6 rows',
+		'TABLE17_TITLE'			=> 'Table - 1 column, 7 rows',
+		'TABLE18_TITLE'			=> 'Table - 1 column, 8 rows',
+		'TABLE19_TITLE'			=> 'Table - 1 column, 9 rows',
+		'TABLE110_TITLE'		=> 'Table - 1 column, 10 rows',
+		'TABLE21_TITLE'			=> 'Table - 2 columns, 1 row',
+		'TABLE22_TITLE'			=> 'Table - 2 columns, 2 rows',
+		'TABLE23_TITLE'			=> 'Table - 2 columns, 3 rows',
+		'TABLE24_TITLE'			=> 'Table - 2 columns, 4 rows',
+		'TABLE25_TITLE'			=> 'Table - 2 columns, 5 rows',
+		'TABLE26_TITLE'			=> 'Table - 2 columns, 6 rows',
+		'TABLE27_TITLE'			=> 'Table - 2 columns, 7 rows',
+		'TABLE28_TITLE'			=> 'Table - 2 columns, 8 rows',
+		'TABLE29_TITLE'			=> 'Table - 2 columns, 9 rows',
+		'TABLE210_TITLE'		=> 'Table - 2 columns, 10 rows',
+		'TABLE31_TITLE'			=> 'Table - 3 columns, 1 row',
+		'TABLE32_TITLE'			=> 'Table - 3 columns, 2 rows',
+		'TABLE33_TITLE'			=> 'Table - 3 columns, 3 rows',
+		'TABLE34_TITLE'			=> 'Table - 3 columns, 4 rows',
+		'TABLE35_TITLE'			=> 'Table - 3 columns, 5 rows',
+		'TABLE36_TITLE'			=> 'Table - 3 columns, 6 rows',
+		'TABLE37_TITLE'			=> 'Table - 3 columns, 7 rows',
+		'TABLE38_TITLE'			=> 'Table - 3 columns, 8 rows',
+		'TABLE39_TITLE'			=> 'Table - 3 columns, 9 rows',
+		'TABLE310_TITLE'		=> 'Table - 3 columns, 10 rows',
+		'TABLE41_TITLE'			=> 'Table - 4 columns, 1 row',
+		'TABLE42_TITLE'			=> 'Table - 4 columns, 2 rows',
+		'TABLE43_TITLE'			=> 'Table - 4 columns, 3 rows',
+		'TABLE44_TITLE'			=> 'Table - 4 columns, 4 rows',
+		'TABLE45_TITLE'			=> 'Table - 4 columns, 5 rows',
+		'TABLE46_TITLE'			=> 'Table - 4 columns, 6 rows',
+		'TABLE47_TITLE'			=> 'Table - 4 columns, 7 rows',
+		'TABLE48_TITLE'			=> 'Table - 4 columns, 8 rows',
+		'TABLE49_TITLE'			=> 'Table - 4 columns, 9 rows',
+		'TABLE410_TITLE'		=> 'Table - 4 columns, 10 rows',
+		'TABLE51_TITLE'			=> 'Table - 5 columns, 1 row',
+		'TABLE52_TITLE'			=> 'Table - 5 columns, 2 rows',
+		'TABLE53_TITLE'			=> 'Table - 5 columns, 3 rows',
+		'TABLE54_TITLE'			=> 'Table - 5 columns, 4 rows',
+		'TABLE55_TITLE'			=> 'Table - 5 columns, 5 rows',
+		'TABLE56_TITLE'			=> 'Table - 5 columns, 6 rows',
+		'TABLE57_TITLE'			=> 'Table - 5 columns, 7 rows',
+		'TABLE58_TITLE'			=> 'Table - 5 columns, 8 rows',
+		'TABLE59_TITLE'			=> 'Table - 5 columns, 9 rows',
+		'TABLE510_TITLE'		=> 'Table - 5 columns, 10 rows',
+		'TABLE61_TITLE'			=> 'Table - 6 columns, 1 row',
+		'TABLE62_TITLE'			=> 'Table - 6 columns, 2 rows',
+		'TABLE63_TITLE'			=> 'Table - 6 columns, 3 rows',
+		'TABLE64_TITLE'			=> 'Table - 6 columns, 4 rows',
+		'TABLE65_TITLE'			=> 'Table - 6 columns, 5 rows',
+		'TABLE66_TITLE'			=> 'Table - 6 columns, 6 rows',
+		'TABLE67_TITLE'			=> 'Table - 6 columns, 7 rows',
+		'TABLE68_TITLE'			=> 'Table - 6 columns, 8 rows',
+		'TABLE69_TITLE'			=> 'Table - 6 columns, 9 rows',
+		'TABLE610_TITLE'		=> 'Table - 6 columns, 10 rows',
+		'TABLE71_TITLE'			=> 'Table - 7 columns, 1 row',
+		'TABLE72_TITLE'			=> 'Table - 7 columns, 2 rows',
+		'TABLE73_TITLE'			=> 'Table - 7 columns, 3 rows',
+		'TABLE74_TITLE'			=> 'Table - 7 columns, 4 rows',
+		'TABLE75_TITLE'			=> 'Table - 7 columns, 5 rows',
+		'TABLE76_TITLE'			=> 'Table - 7 columns, 6 rows',
+		'TABLE77_TITLE'			=> 'Table - 7 columns, 7 rows',
+		'TABLE78_TITLE'			=> 'Table - 7 columns, 8 rows',
+		'TABLE79_TITLE'			=> 'Table - 7 columns, 9 rows',
+		'TABLE710_TITLE'		=> 'Table - 7 columns, 10 rows',
 /**
-* Tables Posted by Columns and Rows - DO NOT CHANGE
+* Generated tables posted by columns and rows
 *
 * Column 1
 */
@@ -182,5 +194,18 @@ $lang = array_merge($lang, array(
 		'TABLE68'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text18[/td]\n			[td=null,1]Text28[/td]\n			[td=null,1]Text38[/td]\n			[td=null,1]Text48[/td]\n			[td=null,1]Text58[/td]\n			[td=null,1]Text68[/td]\n		[/tr]\n	[/tbody]\n[/table]',
 		'TABLE69'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text18[/td]\n			[td=null,1]Text28[/td]\n			[td=null,1]Text38[/td]\n			[td=null,1]Text48[/td]\n			[td=null,1]Text58[/td]\n			[td=null,1]Text68[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text19[/td]\n			[td=null,1]Text29[/td]\n			[td=null,1]Text39[/td]\n			[td=null,1]Text49[/td]\n			[td=null,1]Text59[/td]\n			[td=null,1]Text69[/td]\n		[/tr]\n	[/tbody]\n[/table]',
 		'TABLE610'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text18[/td]\n			[td=null,1]Text28[/td]\n			[td=null,1]Text38[/td]\n			[td=null,1]Text48[/td]\n			[td=null,1]Text58[/td]\n			[td=null,1]Text68[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text19[/td]\n			[td=null,1]Text29[/td]\n			[td=null,1]Text39[/td]\n			[td=null,1]Text49[/td]\n			[td=null,1]Text59[/td]\n			[td=null,1]Text69[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text110[/td]\n			[td=null,1]Text210[/td]\n			[td=null,1]Text310[/td]\n			[td=null,1]Text410[/td]\n			[td=null,1]Text510[/td]\n			[td=null,1]Text610[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+/**
+* Column 7
+*/
+		'TABLE71'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text1[/td]\n			[td=null,1]Text2[/td]\n			[td=null,1]Text3[/td]\n			[td=null,1]Text4[/td]\n			[td=null,1]Text5[/td]\n			[td=null,1]Text6[/td]\n			[td=null,1]Text71[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE72'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n			[td=null,1]Text72[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE73'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n			[td=null,1]Text73[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE74'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n			[td=null,1]Text74[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE75'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n			[td=null,1]Text75[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE76'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n			[td=null,1]Text7[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE77'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n			[td=null,1]Text77[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE78'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text18[/td]\n			[td=null,1]Text28[/td]\n			[td=null,1]Text38[/td]\n			[td=null,1]Text48[/td]\n			[td=null,1]Text58[/td]\n			[td=null,1]Text68[/td]\n			[td=null,1]Text78[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE79'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text18[/td]\n			[td=null,1]Text28[/td]\n			[td=null,1]Text38[/td]\n			[td=null,1]Text48[/td]\n			[td=null,1]Text58[/td]\n			[td=null,1]Text68[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text19[/td]\n			[td=null,1]Text29[/td]\n			[td=null,1]Text39[/td]\n			[td=null,1]Text49[/td]\n			[td=null,1]Text59[/td]\n			[td=null,1]Text69[/td]\n			[td=null,1]Text79[/td]\n		[/tr]\n	[/tbody]\n[/table]',
+		'TABLE710'	=> '[size=130]Table Title[/size]\n[table=90,null]\n	[thead]\n		[tr=textleft]\n			[th=17,null]Title1[/th]\n			[th=16,null]Title2[/th]\n			[th=17,null]Title3[/th]\n			[th=16,null]Title4[/th]\n			[th=17,null]Title5[/th]\n			[th=16,null]Title6[/th]\n			[th=16,null]Title7[/th]\n		[/tr]\n	[/thead]\n	[tbody]\n		[tr=bg2]\n			[td=null,1]Text11[/td]\n			[td=null,1]Text21[/td]\n			[td=null,1]Text31[/td]\n			[td=null,1]Text41[/td]\n			[td=null,1]Text51[/td]\n			[td=null,1]Text61[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text12[/td]\n			[td=null,1]Text22[/td]\n			[td=null,1]Text32[/td]\n			[td=null,1]Text42[/td]\n			[td=null,1]Text52[/td]\n			[td=null,1]Text62[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text13[/td]\n			[td=null,1]Text23[/td]\n			[td=null,1]Text33[/td]\n			[td=null,1]Text43[/td]\n			[td=null,1]Text53[/td]\n			[td=null,1]Text63[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text14[/td]\n			[td=null,1]Text24[/td]\n			[td=null,1]Text34[/td]\n			[td=null,1]Text44[/td]\n			[td=null,1]Text54[/td]\n			[td=null,1]Text64[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text15[/td]\n			[td=null,1]Text25[/td]\n			[td=null,1]Text35[/td]\n			[td=null,1]Text45[/td]\n			[td=null,1]Text55[/td]\n			[td=null,1]Text65[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text16[/td]\n			[td=null,1]Text26[/td]\n			[td=null,1]Text36[/td]\n			[td=null,1]Text46[/td]\n			[td=null,1]Text56[/td]\n			[td=null,1]Text66[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text17[/td]\n			[td=null,1]Text27[/td]\n			[td=null,1]Text37[/td]\n			[td=null,1]Text47[/td]\n			[td=null,1]Text57[/td]\n			[td=null,1]Text67[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text18[/td]\n			[td=null,1]Text28[/td]\n			[td=null,1]Text38[/td]\n			[td=null,1]Text48[/td]\n			[td=null,1]Text58[/td]\n			[td=null,1]Text68[/td]\n		[/tr]\n		[tr=bg2]\n			[td=null,1]Text19[/td]\n			[td=null,1]Text29[/td]\n			[td=null,1]Text39[/td]\n			[td=null,1]Text49[/td]\n			[td=null,1]Text59[/td]\n			[td=null,1]Text69[/td]\n		[/tr]\n		[tr=bg1]\n			[td=null,1]Text110[/td]\n			[td=null,1]Text210[/td]\n			[td=null,1]Text310[/td]\n			[td=null,1]Text410[/td]\n			[td=null,1]Text510[/td]\n			[td=null,1]Text610[/td]\n			[td=null,1]Text710[/td]\n		[/tr]\n	[/tbody]\n[/table]',
 	)
 );

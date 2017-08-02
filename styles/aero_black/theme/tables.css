@@ -7,7 +7,7 @@
 .postingbuttons img { margin-bottom: 2px; }
 
 /* Hiden selections block */
-#tables-button-selections { width: 100%;display: none; }
+#tables-button-selections { width: 98%;display: none; }
 #tables-postingbuttons-switch.postingbuttons { vertical-align: middle; }
 .upper_group { width: 65px;display: inline-block;wrap: wrap; }
 .lower_group { width: 65px;display: inline-block;wrap: wrap; }

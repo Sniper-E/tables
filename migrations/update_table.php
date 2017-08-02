@@ -16,10 +16,18 @@ class update_table extends \phpbb\db\migration\migration
 	{
 		return array('\phpbb\db\migration\data\v310\dev');
 	}
+	public function effectively_installed()
+	{
+		return isset($this->config['tables_version']) && version_compare($this->config['tables_version'], '2.1.2', '>=');
+	}
 	public function update_data()
 	{
 		return array(
 			array('custom', array(array($this, 'install_tables_bbcodes'))),
+			// Permission
+			array('permission.add', array('u_use_tables_bbcode', true)),
+			// Set Permission
+			array('permission.permission_set', array('ADMINISTRATORS', 'u_use_tables_bbcode', 'group', true)),
 		);
 	}
 	public function revert_data()

@@ -1,5 +1,12 @@
 services:
     sniper.tables.listener:
         class: sniper\tables\event\listener
+        arguments:
+            - '@user'
+            - '@template'
+            - '@auth'
+            - '@config'
+            - '@controller.helper'
+            - '@ext.manager'
         tags:
             - { name: event.listener }
