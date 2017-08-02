@@ -25,7 +25,7 @@ $lang = array_merge($lang, array(
 /**
 * French
 *
-* Buttons titles for selections and guidelines
+* Button titres for selections and guidelines
 */
 		'TABLES_TITLE'				=> 'Table',
 		'TABLE_TITLE'				=> 'Sélection de table',
