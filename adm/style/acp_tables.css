@@ -1,9 +1,9 @@
 /* Tables bbCode Extension  */
 
 /* Table background color (optional) */
-.table1 { background-color: #DBDFE2; }
-.table1 img { vertical-align: middle; }
-.table1 i.fa-fw { cursor: pointer; }
+.tables1 .table1 { background-color: #6DACD2;border-radius: 4px; }
+.tables1 .table1 img { vertical-align: middle; }
+.tables1 .table1 i.fa-fw { cursor: pointer; }
 .abbc3_button img { vertical-align: middle; }
 .postingbuttons img { margin-top: 3px; }
 
@@ -25,16 +25,10 @@
 .textcenter { text-align: center; }
 .textright { text-align: right; }
 
-/* Classes for borders */
-.border-trbl { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
-.border-trb { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999; }
-.border-rbl { border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
-.border-rb { border-right: 1px solid #999;border-bottom: 1px solid #999; }
-
 /* Tables responsive */
 @media (max-width: 950px) { #tables-button-selections { width: 100%;display: none; } }
 
 /* Tables preview background colors in acp */
 .bg1 { background-color: #ECF3F7; }
 .bg2 { background-color: #E1EBF2; }
-.bg1:hover, .bg2:hover { background-color: #CFE1F6 !important; }
+.bg1:hover, .bg2:hover { background-color: #CFE1F6; }
