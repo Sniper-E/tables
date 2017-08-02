@@ -21,5 +21,5 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ACL_U_USE_TABLES_BBCODE'		=> 'Can use tables bbcode',
+	'ACL_U_USE_TABLES_BBCODE'		=> 'Peut utiliser le BBCode Tables.',
 ));
