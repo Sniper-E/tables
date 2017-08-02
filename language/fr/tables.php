@@ -18,14 +18,14 @@ if (empty($lang) || !is_array($lang))
 }
 
 /**
-* DO NOT CHANGE ABOVE
+* Ne PAS MODIFIER AU-DESSUS
 */
 
 $lang = array_merge($lang, array(
 /**
-* French
+* Langue française
 *
-* Button titres for selections and guidelines
+* Titres bouton dans les sélections et lignes directrices
 */
 		'TABLES_TITLE'				=> 'Table',
 		'TABLE_TITLE'				=> 'Sélection de table',
@@ -34,7 +34,7 @@ $lang = array_merge($lang, array(
 		'TABLE_GUIDELINES_SHOW'		=> '<strong>Afficher l’aide concernant les tables</strong>',
 		'TABLE_GUIDELINES'			=> '<strong>Aide concernant les tables :</strong> La valeur 75 utilisée dans cet exemple : [table=75,null] définie le pourcentage de largeur de la table.<br />La propriété « tleft » de l’exemple suivant : [table=75,tleft] définie le flottement de la table à gauche du texte.<br />Voici les propriétés disponibles : « null », « tleft », « tright » ou « tcenter ».<br />Lorsque la propriété « tcenter » est utilisée dans la table, il est nécessaire d’utiliser la propriété [center] autour du titre de la table afin de l’aligner.<br />Le pourcentage de largeur maximal de la table est de 98%.<br />Les valeurs [th=20,null], [th=30,null] et [th=50,null] correspondent aux pourcentages de largeur de chaque colonne.<br />L’addition des pourcentages utilisés dans les propriétés de type [th=#% doit nécessairement être égale à 100%.<br />La valeur « null » utilisée dans : [td=null,1] est une classe, utiliser « bg1 », « bg2 », ou autre si besoin et la valeur « 1 » définie l’attribue « colspan » de l’élément [td].<br />Si l’exemple ci-contre est utilisé : [td=null,2] il est nécessaire de retirer l’un des autres, tel que : [td=null,1] pour libérer la place sur deux colonnes.<br />L’exemple suivant :[tr=bg2] définie la classe de la rangée.<br /><br /><strong>Instructions :</strong> Cliquer sur le bouton « Aperçu » après la saisie du code de la table dans le cadre de saisie du texte. Depuis la page de l’aperçu, modifier tous les noms des titres et des zones de texte selon ses besoins. Ajuster tous les pourcentages de largeur pour équilibrer l’apparence de la table, cliquer à nouveau sur « Aperçu » puis sur « Envoyer ».',
 /**
-* Titre by colonne numbers
+* Des numéros de colonne par titres
 */
 		'COLUMN_ONE'			=> '1 colonne',
 		'COLUMN_TWO'			=> '2 colonnes',
@@ -44,7 +44,7 @@ $lang = array_merge($lang, array(
 		'COLUMN_SIX'			=> '6 colonnes',
 		'COLUMN_SEVEN'			=> '7 colonnes',
 /**
-* Titre on hover for table selections 
+* Titre sur hove pour sélections de table
 */
 		'TABLE11_TITLE'			=> 'Table - 1 colonne, 1 rangée',
 		'TABLE12_TITLE'			=> 'Table - 1 colonne, 2 rangées',
@@ -117,7 +117,7 @@ $lang = array_merge($lang, array(
 		'TABLE79_TITLE'			=> 'Table - 7 colonnes, 9 rangées',
 		'TABLE710_TITLE'		=> 'Table - 7 colonnes, 10 rangées',
 /**
-* Generated tables posted by colonnes and rangées
+* Tableaux générés posté par colonnes et lignes
 *
 * Colonne 1
 */
