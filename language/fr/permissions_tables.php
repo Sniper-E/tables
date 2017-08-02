@@ -1,10 +1,10 @@
 <?php
 /**
-*
 * @package phpBB Extension - Tables
 * @copyright (c) 2017 Sniper_E (http://sniper-e.com)
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
+* @French translation by Galixte (http://www.galixte.com)
 */
 
 /**
