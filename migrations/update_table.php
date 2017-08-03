@@ -24,6 +24,8 @@ class update_table extends \phpbb\db\migration\migration
 	{
 		return array(
 			array('custom', array(array($this, 'install_tables_bbcodes'))),
+			 // Add config
+			 array('config.add', array('use_tables_bbcode', '0')),
 			// Permission
 			array('permission.add', array('u_use_tables_bbcode', true)),
 			// Set Permission
