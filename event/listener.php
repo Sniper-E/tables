@@ -82,7 +82,7 @@ class listener implements EventSubscriberInterface
 	public function page_header_after($event)
 	{
 		$this->template->assign_vars(array(
-			'USE_TABLES_BBCODE'				=> $this->auth->acl_get('u_use_tables_bbcode'),
+			'U_USE_TABLES_BBCODE'			=> $this->auth->acl_get('u_use_tables_bbcode') ? true : false,
 		));
 	}
 }
