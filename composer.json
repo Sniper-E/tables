@@ -1,7 +1,7 @@
 {
 	"name": "sniper/tables",
 	"type": "phpbb-extension",
-	"description": "Inserts a table block in your post.",
+	"description": "Inserts a table up to 7 columns, 10 rows in your post.",
 	"homepage": "http://www.sniper-e.com",
 	"version": "2.1.2",
 	"time": "2015-01-01",
