@@ -1,3 +1,11 @@
 <!-- IF U_USE_TABLES_BBCODE and SCRIPT_NAME == "posting" -->
-	<button id="tables-button-switch" type="button" class="button button-icon-only responsive-hide" onclick="document.getElementById('tables-button-selections').style.display = 'block';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_HIDE}';" title="{L_TABLE_SELECTIONS_SHOW}"><i class="icon fa-table fa-fw" aria-hidden="true"></i></button>
+	<script>
+		function toggle_buttons_table_selections() {
+			if (document.getElementById('tables-button-selections').style.display === 'none') { document.getElementById('tables-button-selections').style.display = 'block';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_HIDE}'; }
+			else { document.getElementById('tables-button-selections').style.display = 'none';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_SHOW}'; }
+		}
+	</script>
+	<button id="tables-button-switch" type="button" class="button button-icon-only responsive-hide" onclick="toggle_buttons_table_selections();" title="{L_TABLE_SELECTIONS_SHOW}">
+		<i class="icon fa-table fa-fw" aria-hidden="true"></i>
+	</button>
 <!-- ENDIF -->

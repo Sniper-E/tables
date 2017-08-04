@@ -1,1 +1,9 @@
-	<button id="acp-tables-postingbuttons-switch" type="button" class="postingbuttons responsive-hide" onclick="document.getElementById('acp-tables-button-selections').style.display = 'block';document.getElementById('acp-tables-postingbuttons-switch').title = '{L_TABLE_SELECTIONS_HIDE}';" title="{L_TABLE_SELECTIONS_SHOW}"><img src="../ext/sniper/tables/images/table.gif" alt="" /></button>
+	<script>
+		function toggle_acp_postingbuttons_table_selections() {
+			if (document.getElementById('acp-tables-button-selections').style.display === 'none') { document.getElementById('acp-tables-button-selections').style.display = 'block';document.getElementById('acp-tables-postingbuttons-switch').title = '{L_TABLE_SELECTIONS_HIDE}'; }
+			else { document.getElementById('acp-tables-button-selections').style.display = 'none';document.getElementById('acp-tables-postingbuttons-switch').title = '{L_TABLE_SELECTIONS_SHOW}'; }
+		}
+	</script>
+	<button id="acp-tables-postingbuttons-switch" type="button" class="postingbuttons responsive-hide" onclick="toggle_acp_postingbuttons_table_selections();" title="{L_TABLE_SELECTIONS_SHOW}">
+		<img src="../ext/sniper/tables/images/table.gif" alt="" />
+	</button>
