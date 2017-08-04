@@ -22,7 +22,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 /**
-* French
+* French language
 *
 * Button titles for selections and guidelines
 */
