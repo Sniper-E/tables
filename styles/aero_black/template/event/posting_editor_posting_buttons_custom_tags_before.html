@@ -2,7 +2,7 @@
 	<script>
 		function toggle_postingbuttons_table_selections() {
 			if (document.getElementById('tables-button-selections').style.display === 'none') { document.getElementById('tables-button-selections').style.display = 'block';document.getElementById('tables-postingbuttons-switch').title = '{L_TABLE_SELECTIONS_HIDE}'; }
-			else { document.getElementById('tables-button-selections').style.display = 'none';document.getElementById('tables-postingbuttons-switch').title = '{L_TABLE_SELECTIONS_SHOW}'; }
+			else { document.getElementById('tables-button-selections').style.display = 'none';document.getElementById('tables-button-guidelines').style.display = 'none';document.getElementById('tables-postingbuttons-switch').title = '{L_TABLE_SELECTIONS_SHOW}'; }
 		}
 	</script>
 	<button id="tables-postingbuttons-switch" type="button" class="postingbuttons responsive-hide" onclick="toggle_postingbuttons_table_selections();" title="{L_TABLE_SELECTIONS_SHOW}">

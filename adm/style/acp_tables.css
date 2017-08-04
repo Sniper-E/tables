@@ -4,10 +4,11 @@
 .tables1 .table1 { background-color: #6DACD2;border-radius: 4px; }
 .tables1 .table1 img, .abbc3_button img { vertical-align: middle; }
 .tables1 .table1 i.fa-fw { cursor: pointer; }
-.postingbuttons img { margin-top: 3px; }
+.postingbuttons img { margin-top: 1px; }
 
 /* Hiden selections block */
 #acp-tables-button-selections { width: 100%;display: none; }
+#acp-tables-button-guidelines a, #acp-tables-guidelines-show a { cursor: pointer; }
 #acp-tables-postingbuttons-switch.postingbuttons { vertical-align: middle;background-color: #dfdfdf; }
 #acp-tables-button-switch.button2 { height: 22px;vertical-align: middle; }
 .upper_group, .lower_group { width: 80px;display: inline-block;wrap: wrap; }
