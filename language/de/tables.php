@@ -33,7 +33,7 @@ $lang = array_merge(
 		'TABLE_SELECTIONS_SHOW'		=> 'Tabellenauswahl anzeigen',
 		'TABLE_SELECTIONS_HIDE'		=> 'Wähle eine Tabelle',
 		'TABLE_GUIDELINES_SHOW'		=> '<strong>Tabellenrichtlinien anzeigen</strong>',
-		'TABLE_GUIDELINES_Hide'		=> '<strong>Tabellerichtlinien ausblenden </strong>',
+		'TABLE_GUIDELINES_HIDE'		=> '<strong>Tabellerichtlinien ausblenden </strong>',
 		'TABLE_GUIDELINES'			=> '<strong>Tabellenrichtlinien:</strong> [table=75,null] Die Zahl 75 setzt die prozentuale Breite einer Tabelle. [table=75,tleft] tleft lässt die Tabelle links vom Text fließen. Verwende null, tleft, tright oder tcenter. Wenn in der Tabelle tcenter benutzt wird, benutze auch [center] rund um den Tabellentitel zum Angleichen. Maximale prozentuale Breite der Tabelle ist 98%. [th=20,null], [th=30,null], [th=50,null] Die Zahlen setzen die prozentuale Breite für jede Spalte. Alle [th=#%] müssen gleich 100% sein. [td=null,1] null ist eine Klasse, verwende bg1, bg2, oder irgendeine andere, und die 1 setzt das Attribut colspan von [td]. Wenn [td=null,2] benutzt wird, musst du eines der anderen [td=null,1] entfernen, um Platz für die zweite Spalte zu machen. [tr=bg2] setzt die Klasse der Zeile. <br /><strong>Anweisungen:</strong> Klicke auf den Vorschau-Button, nachdem du deine Tabellencodes im Textfeld eingefügt hast. Von der Vorschau aus bearbeitest du alle Titelnamen und Textfelder, um deinen Beitrag anzupassen. Passe alle prozentualen Breiten an, um die Ansicht deiner Tabelle auszubalancieren, Vorschau und Absenden.',
 /**
 * Titles by column numbers
