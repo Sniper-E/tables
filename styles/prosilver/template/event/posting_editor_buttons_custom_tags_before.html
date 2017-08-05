@@ -2,7 +2,7 @@
 	<script>
 		function toggle_buttons_table_selections() {
 			if (document.getElementById('tables-button-selections').style.display === 'none') { document.getElementById('tables-button-selections').style.display = 'block';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_HIDE}'; }
-			else { document.getElementById('tables-button-selections').style.display = 'none';document.getElementById('tables-button-guidelines').style.display = 'none';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_SHOW}'; }
+			else { document.getElementById('tables-button-selections').style.display = 'none';document.getElementById('tables-button-guidelines').style.display = 'none';document.getElementById('tables-guidelines-show').style.display = 'block';document.getElementById('tables-button-switch').title = '{L_TABLE_SELECTIONS_SHOW}'; }
 		}
 	</script>
 	<button id="tables-button-switch" type="button" class="button button-icon-only responsive-hide" onclick="toggle_buttons_table_selections();" title="{L_TABLE_SELECTIONS_SHOW}">
