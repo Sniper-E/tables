@@ -44,6 +44,7 @@ $lang = array_merge(
 		'COLUMN_FOUR'			=> '4 Spalten',
 		'COLUMN_FIVE'			=> '5 Spalten',
 		'COLUMN_SIX'			=> '6 Spalten',
+		'COLUMN_SEVEN'			=> '7 Spalten',
 /**
 * Title on hove for table selections
 */
@@ -107,6 +108,16 @@ $lang = array_merge(
 		'TABLE68_TITLE'			=> 'Tabelle- 6 Spalten - 8 Zeilen',
 		'TABLE69_TITLE'			=> 'Tabelle- 6 Spalten - 9 Zeilen',
 		'TABLE610_TITLE'		=> 'Tabelle- 6 Spalten - 10 Zeilen',
+		'TABLE71_TITLE'			=> 'Tabelle- 7 Spalten - 1 Zeile',
+		'TABLE72_TITLE'			=> 'Tabelle- 7 Spalten - 2 Zeilen',
+		'TABLE73_TITLE'			=> 'Tabelle- 7 Spalten - 3 Zeilen',
+		'TABLE74_TITLE'			=> 'Tabelle- 7 Spalten - 4 Zeilen',
+		'TABLE75_TITLE'			=> 'Tabelle- 7 Spalten - 5 Zeilen',
+		'TABLE76_TITLE'			=> 'Tabelle- 7 Spalten - 6 Zeilen',
+		'TABLE77_TITLE'			=> 'Tabelle- 7 Spalten - 7 Zeilen',
+		'TABLE78_TITLE'			=> 'Tabelle- 7 Spalten - 8 Zeilen',
+		'TABLE79_TITLE'			=> 'Tabelle- 7 Spalten - 9 Zeilen',
+		'TABLE710_TITLE'		=> 'Tabelle- 7 Spalten - 10 Zeilen',
 /**
 * Generated tables posted by columns and rows
 *
