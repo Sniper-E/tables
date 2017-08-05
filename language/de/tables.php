@@ -1,12 +1,15 @@
 <?php
 /**
-* @ package phpBB Extension - Tables
-* @ copyright (c) 2015 Sniper_E - http://sniper-e.com
-* @ license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* @package phpBB Extension - Tables
+* @copyright (c) 2015 Sniper_E - http://sniper-e.com
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
-* @ Deutsch translation by Miri4ever (http://www.terra-oceanica.de)
+* @Deutsch translation by Miri4ever (http://www.terra-oceanica.de)
 */
 
+/**
+* DO NOT CHANGE
+*/
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -16,15 +19,12 @@ if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
 }
-/**
-* DO NOT CHANGE ABOVE
-*/
 
 
 $lang = array_merge(
 	$lang, array(
 /**
-* Tables - German language
+* German language
 *
 * Button titles for selections and guidelines
 */
@@ -33,6 +33,7 @@ $lang = array_merge(
 		'TABLE_SELECTIONS_SHOW'		=> 'Tabellenauswahl anzeigen',
 		'TABLE_SELECTIONS_HIDE'		=> 'Wähle eine Tabelle',
 		'TABLE_GUIDELINES_SHOW'		=> '<strong>Tabellenrichtlinien anzeigen</strong>',
+		'TABLE_GUIDELINES_HIDE'		=> '<strong>Tabellerichtlinien ausblenden </strong>',
 		'TABLE_GUIDELINES'			=> '<strong>Tabellenrichtlinien:</strong> [table=75,null] Die Zahl 75 setzt die prozentuale Breite einer Tabelle. [table=75,tleft] tleft lässt die Tabelle links vom Text fließen. Verwende null, tleft, tright oder tcenter. Wenn in der Tabelle tcenter benutzt wird, benutze auch [center] rund um den Tabellentitel zum Angleichen. Maximale prozentuale Breite der Tabelle ist 98%. [th=20,null], [th=30,null], [th=50,null] Die Zahlen setzen die prozentuale Breite für jede Spalte. Alle [th=#%] müssen gleich 100% sein. [td=null,1] null ist eine Klasse, verwende bg1, bg2, oder irgendeine andere, und die 1 setzt das Attribut colspan von [td]. Wenn [td=null,2] benutzt wird, musst du eines der anderen [td=null,1] entfernen, um Platz für die zweite Spalte zu machen. [tr=bg2] setzt die Klasse der Zeile. <br /><strong>Anweisungen:</strong> Klicke auf den Vorschau-Button, nachdem du deine Tabellencodes im Textfeld eingefügt hast. Von der Vorschau aus bearbeitest du alle Titelnamen und Textfelder, um deinen Beitrag anzupassen. Passe alle prozentualen Breiten an, um die Ansicht deiner Tabelle auszubalancieren, Vorschau und Absenden.',
 /**
 * Titles by column numbers
@@ -43,6 +44,7 @@ $lang = array_merge(
 		'COLUMN_FOUR'			=> '4 Spalten',
 		'COLUMN_FIVE'			=> '5 Spalten',
 		'COLUMN_SIX'			=> '6 Spalten',
+		'COLUMN_SEVEN'			=> '7 Spalten',
 /**
 * Title on hove for table selections
 */
@@ -106,6 +108,16 @@ $lang = array_merge(
 		'TABLE68_TITLE'			=> 'Tabelle- 6 Spalten - 8 Zeilen',
 		'TABLE69_TITLE'			=> 'Tabelle- 6 Spalten - 9 Zeilen',
 		'TABLE610_TITLE'		=> 'Tabelle- 6 Spalten - 10 Zeilen',
+		'TABLE71_TITLE'			=> 'Tabelle- 7 Spalten - 1 Zeile',
+		'TABLE72_TITLE'			=> 'Tabelle- 7 Spalten - 2 Zeilen',
+		'TABLE73_TITLE'			=> 'Tabelle- 7 Spalten - 3 Zeilen',
+		'TABLE74_TITLE'			=> 'Tabelle- 7 Spalten - 4 Zeilen',
+		'TABLE75_TITLE'			=> 'Tabelle- 7 Spalten - 5 Zeilen',
+		'TABLE76_TITLE'			=> 'Tabelle- 7 Spalten - 6 Zeilen',
+		'TABLE77_TITLE'			=> 'Tabelle- 7 Spalten - 7 Zeilen',
+		'TABLE78_TITLE'			=> 'Tabelle- 7 Spalten - 8 Zeilen',
+		'TABLE79_TITLE'			=> 'Tabelle- 7 Spalten - 9 Zeilen',
+		'TABLE710_TITLE'		=> 'Tabelle- 7 Spalten - 10 Zeilen',
 /**
 * Generated tables posted by columns and rows
 *
