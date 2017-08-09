@@ -28,9 +28,24 @@ $lang = array_merge($lang, array(
 		'TABLE_TITLE'				=> 'Table selections',
 		'TABLE_SELECTIONS_SHOW'		=> 'Show table selections',
 		'TABLE_SELECTIONS_HIDE'		=> 'Hide table selections',
-		'TABLE_GUIDELINES_SHOW'		=> '<strong>Show table guidelines</strong>',
-		'TABLE_GUIDELINES_HIDE'		=> '<strong>Hide table guidelines</strong>',
-		'TABLE_GUIDELINES'			=> '<strong>Table guidelines: </strong> [table=75,null] The number 75 sets the width% of a table. Max width% of table is 98%. [table=75,tleft] The tleft floats the table left of the text. Use null, tleft, tright or tcenter on table.  When using tcenter in the table, use [center] around the Table Title for it to line up. Use [tr=textcenter] or [td=textcenter,1] to align the text center in the table. Use textleft, textcenter or textright to align the text. [th=20,null], [th=30,null], [th=50,null] The numbers sets width% of each column. All [th=#% need to equal 100%. [tr=bg2] sets the class of the row. [td=null,1] The null is a blank class, use bg1, bg2, or any class. The 1 sets the colspan of the [td]. If [td=null,2] is used you must remove one of the other [td=null,1] to make room for the 2 column.<br /><strong>Instructions: </strong> Click the preview button after inserting your table codes in textarea. From your preview, edit all of the Title names and Text areas to suit your post. Adjust all the width% to balance out the look of your table, preview and submit.',
+		'TABLE_GUIDELINES_SHOW'		=> '<b>Show table guidelines</b>',
+		'TABLE_GUIDELINES_HIDE'		=> '<b>Hide table guidelines</b>',
+		'TABLE_GUIDELINES'			=> '<h3 class="forabg">Table guidelines</h3>
+<div class="panel tables-list">
+&ordm; <b>[table=75,null]</b> the number <b>75</b> sets the <b>width%</b> of a table. Max width% of table is <b>98%</b>.<br />
+&ordm; <b>[table=75,tleft]</b> the <b>tleft</b> floats the table <b>left</b> of the text. Use <b>null, tleft, tright</b> or <b>tcenter</b> on table.<br />
+&ordm; When using <b>tcenter</b> in the table, use <b>[align=center]</b> around the <b>Table Title</b> for it to line up with the table.<br />
+&ordm; <b>[th=20,null], [th=30,null], [th=50,null]</b> the numbers set <b>width%</b> of each column. All <b>[th=#%</b> need to equal <b>100%. [tr=bg2]</b> sets the class of the row.<br />
+&ordm; Use <b>[tr=textcenter]</b> or <b>[td=textcenter,1]</b> to align the text center in the table. Use <b>textleft, textcenter</b> or <b>textright</b> to align the text.<br />
+&ordm; <b>[td=null,1]</b> the <b>null</b> is a blank class, use <b>bg1, bg2</b>, or create a new class. The <b>1</b> sets the <b>colspan</b> of the <b>[td]</b>.<br />
+&ordm; If <b>[td=null,2]</b> is used for <b>2 columns</b> you must remove one of the other <b>[td=null,1]</b> to make room for the <b>new 2 columns</b>.
+</div>
+<h3 class="forabg">Instructions</h3>
+<div class="panel tables-list">
+&ordm; Click the <b>Preview</b>  button after inserting your table codes in textarea.<br />
+&ordm; From your preview, edit all of the <b>Title</b> names and <b>Text</b> names to suit your post.<br />
+&ordm; Adjust all the <b>width%</b> to balance out the look of your table, <b>Preview</b> and <b>Submit</b>.
+</div>',
 /**
 * Titles by column numbers
 */

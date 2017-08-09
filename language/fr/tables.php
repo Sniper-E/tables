@@ -30,9 +30,24 @@ $lang = array_merge($lang, array(
 		'TABLE_TITLE'				=> 'Sélection de table',
 		'TABLE_SELECTIONS_SHOW'		=> 'Afficher la sélection de table',
 		'TABLE_SELECTIONS_HIDE'		=> 'Masquer la sélection de table',
-		'TABLE_GUIDELINES_SHOW'		=> '<strong>Afficher l’aide concernant les tables</strong>',
-		'TABLE_GUIDELINES_HIDE'		=> '<strong>Masquer l’aide concernant les tables</strong>',
-		'TABLE_GUIDELINES'			=> '<strong>Aide concernant les tables :</strong> La valeur 75 utilisée dans cet exemple : [table=75,null] définie le pourcentage de largeur de la table.<br />La propriété « tleft » de l’exemple suivant : [table=75,tleft] définie le flottement de la table à gauche du texte.<br />Voici les propriétés disponibles : « null », « tleft », « tright » ou « tcenter ».<br />Le pourcentage maximal de la largeur de la table est de 98%.<br />Lorsque la propriété « tcenter » est utilisée dans la table, il est nécessaire d’utiliser la propriété [center] pour le titre de la table afin de l’aligner.<br />L’utilisation de [tr=textcenter] ou [td=textcenter,1] permet de centrer le texte dans la table.<br />L’utilisation de « textleft », « textcenter » ou « textright » permet d’aligner le texte selon ses besoins.<br />Les valeurs [th=20,null], [th=30,null] et [th=50,null] correspondent aux pourcentages de largeur de chaque colonne.<br />L’exemple suivant : [tr=bg2] définie la classe de la rangée.<br />L’addition des pourcentages utilisés dans les propriétés de type « [th=#% » doit nécessairement être égale à 100%.<br />La valeur « null » utilisée dans : [td=null,1] est une classe vide, utiliser « bg1 », « bg2 » ou autre si besoin et la valeur « 1 » définie l’attribue « colspan » de l’élément [td].<br />Si l’exemple ci-contre est utilisé : [td=null,2] il est nécessaire de retirer l’un des autres, tel que : [td=null,1] pour libérer la place sur deux colonnes.<br /><br /><strong>Instructions :</strong> Après avoir sélectionné la table souhaitée, cliquer sur le bouton « Aperçu » pour visualiser son affichage, ainsi, il sera plus facile de modifier tous les noms des titres et des zones de texte selon ses besoins. Ajuster tous les pourcentages de largeur pour équilibrer l’apparence de la table, cliquer à nouveau sur « Aperçu » puis sur « Envoyer ».',
+		'TABLE_GUIDELINES_SHOW'		=> '<b> Afficher l’aide concernant les tables</b>',
+		'TABLE_GUIDELINES_HIDE'		=> '<b> Masquer l’aide concernant les tables</b>',
+		'TABLE_GUIDELINES'			=> '<h3 class="forabg">Aide concernant les tables :</h3>
+<div class="panel tables-list">
+&ordm; <b>[table=75,null]</b> où la valeur <b>75</b> définie le <b>pourcentage de largeur</b> de la table. Le pourcentage maximal de la largeur de la table est de <b>98 %</b>.<br />
+&ordm; <b>[table=75,tleft]</b> où la propriété <b>tleft</b> définie le flottement de la table à <b>gauche</b> du texte. Voici les propriétés disponibles : <b>null, tleft, tright</b> ou <b>tcenter</b>.<br />
+&ordm; Lorsque la propriété <b>tcenter</b> est utilisée dans la table, il est nécessaire d’utiliser la propriété <b>[align=center]</b> sur <b>le titre de la table</b> afin de l’aligner.<br />
+&ordm; Les valeurs <b>[th=20,null], [th=30,null], [th=50,null]</b> correspondent aux <b>pourcentages de largeur</b> de chaque colonne. L’addition des pourcentages utilisés dans les propriétés de type <b>[th=#%</b> doit nécessairement être égale à <b>100 %</b>. L’exemple suivant : <b>[tr=bg2]</b> définie la classe de la rangée.<br />
+&ordm; L’utilisation de <b>[tr=textcenter]</b> ou <b>[td=textcenter,1]</b> permet de centrer le texte dans la table. L’utilisation de <b>textleft, textcenter</b> ou <b>textright</b> permet d’aligner le texte selon ses besoins.<br />
+&ordm; <b>[td=null,1]</b> où la valeur <b>null</b> est une classe vide, utiliser <b>bg1, bg2</b> ou créer une autre classe si besoin est. La valeur <b>1</b> définie l’attribue <b>colspan</b> de l’élément <b>[td]</b>.<br />
+&ordm; Si l’exemple suivant : <b>[td=null,2]</b> est utilisé pour <b>2 colonnes</b> il est nécessaire de retirer l’un des autres, tel que : <b>[td=null,1]</b> pour libérer de la place aux <b>2 nouvelles colonnes</b>.
+</div>
+<h3 class="forabg">Instructions :</h3>
+<div class="panel tables-list">
+&ordm; Après avoir sélectionné la table souhaitée, cliquer sur le bouton <b>Aperçu</b> pour visualiser son rendu.<br />
+&ordm; Depuis l’aperçu, il sera plus facile de modifier tous les noms des <b>titres</b> et des zones de <b>texte</b> selon ses besoins.<br />
+&ordm; Ajuster tous les <b>pourcentages de largeur</b> pour équilibrer l’apparence de la table, cliquer à nouveau sur <b>Aperçu</b> puis sur <b>Envoyer</b>.
+</div>',
 /**
 * Titles by column numbers
 */
