@@ -50,7 +50,7 @@ class update_table extends \phpbb\db\migration\migration
 	/**
 	 * @var array An array of notebbcodes (tags) to be left behind
 	 */
-	$bbcode_tags = array('tables=', 'tr=', 'th-', 'td=', 'thead', 'tbody', 'center', 'align=', 'float=');
+	$bbcode_tags = array('tables=', 'tr=', 'th-', 'td=', 'thead', 'tbody');
 	// set to null the display on posting
 	$sql = 'UPDATE ' . BBCODES_TABLE . '
 		SET display_on_posting = 0
@@ -109,24 +109,6 @@ class update_table extends \phpbb\db\migration\migration
 			'tbody' => array(
 				'bbcode_match'		=> '[tbody]{TEXT}[/tbody]',
 				'bbcode_tpl'		=> '<tbody>{TEXT}</tbody>',
-				'bbcode_helpline'	=> '',
-				'display_on_posting'=> 0,
-			),
-			'center' => array(
-				'bbcode_match'		=> '[center]{TEXT}[/center]',
-				'bbcode_tpl'		=> '<div style="width: 100%;text-align: center">{TEXT}</div>',
-				'bbcode_helpline'	=> '',
-				'display_on_posting'=> 0,
-			),
-			'align=' => array(
-				'bbcode_match'		=> '[align={IDENTIFIER}]{TEXT}[/align]',
-				'bbcode_tpl'		=> '<span style="text-align:{IDENTIFIER}; display:block;">{TEXT}</span>',
-				'bbcode_helpline'	=> '',
-				'display_on_posting'=> 0,
-			),
-			'float=' => array(
-				'bbcode_match'		=> '[float={IDENTIFIER}]{TEXT}[/float]',
-				'bbcode_tpl'		=> '<span style="float:{IDENTIFIER}">{TEXT}</span>',
 				'bbcode_helpline'	=> '',
 				'display_on_posting'=> 0,
 			),

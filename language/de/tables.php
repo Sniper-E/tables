@@ -33,7 +33,22 @@ $lang = array_merge(
 		'TABLE_SELECTIONS_HIDE'		=> 'Wähle eine Tabelle',
 		'TABLE_GUIDELINES_SHOW'		=> '<strong>Tabellenrichtlinien anzeigen</strong>',
         'TABLE_GUIDELINES_HIDE'		=> '<strong>Tabellenrichtlinien ausblenden</strong>',
-		'TABLE_GUIDELINES'			=> '<strong>Tabellenrichtlinien:</strong> [table=75,null] Die Zahl 75 setzt die prozentuale Breite einer Tabelle. [table=75,tleft] tleft lässt die Tabelle links vom Text fließen. Verwende null, tleft, tright oder tcenter. Wenn in der Tabelle tcenter benutzt wird, benutze auch [center] rund um den Tabellentitel zum Angleichen. Maximale prozentuale Breite der Tabelle ist 98%. [th=20,null], [th=30,null], [th=50,null] Die Zahlen setzen die prozentuale Breite für jede Spalte. Alle [th=#%] müssen gleich 100% sein. [td=null,1] null ist eine Klasse, verwende bg1, bg2, oder irgendeine andere, und die 1 setzt das Attribut colspan von [td]. Wenn [td=null,2] benutzt wird, musst du eines der anderen [td=null,1] entfernen, um Platz für die zweite Spalte zu machen. [tr=bg2] setzt die Klasse der Zeile. <br /><strong>Anweisungen:</strong> Klicke auf den Vorschau-Button, nachdem du deine Tabellencodes im Textfeld eingefügt hast. Von der Vorschau aus bearbeitest du alle Titelnamen und Textfelder, um deinen Beitrag anzupassen. Passe alle prozentualen Breiten an, um die Ansicht deiner Tabelle auszubalancieren, Vorschau und Absenden.',
+        'TABLE_GUIDELINES'			=> '<h3 class="forabg">Tabellenrichtlinien:</h3>
+<div class="panel tables-list">
+&ordm; <b>[table=75,null]</b> Die Zahl 75 setzt die prozentuale <b>Breite</b> einer Tabelle. Maximale prozentuale <b>Breite</b> der Tabelle ist 98%<br />
+&ordm; <b>[table=75,tleft] tleft</b> lässt die Tabelle links vom Text fließen. Verwende <b>null, tleft, tright</b> oder <b>tcenter</b> in der Tabelle.<br />
+&ordm; Wenn in der Tabelle <b>tcenter</b> benutzt wird, solltest du mit <b>[center]</b> den Tabellentitel mittig setzen.<br />
+&ordm; Benutze <b>[tr=textcenter]</b> oder <b>[td=textcenter,1]</b> um den Text zu zentrieren oder <b>textleft, textright</b> für links / rechts ausrichtung.<br />
+&ordm; <b>[th=20,null], [th=30,null], [th=50,null]</b> Legt die <b>Breite%</b> für jede Spalte fest. <b>[th=#%]</b> muß <b>100%</b> ergeben. <b>[tr=bg2]</b> Hintergrund der Zeile.<br />
+&ordm; <b>[td=null,1] null</b> ist ein Platzhalter, verwende <b>bg1, bg2</b>, oder deine eigene Spalte. Die <b>1</b> setzt das Attribut für <b>colspan</b> von <b>[td]</b>.<br />
+&ordm; Wenn <b>[td=null,2]</b> für 2 Spalten benutzt wird, musst du eines der anderen <b>[td=null,1]</b> entfernen, um Platz für die <b>2 neuen Spalten</b> zu machen.<br />
+</div>
+<h3 class="forabg">Anweisungen:</h3>
+<div class="panel tables-list">
+&ordm; Klicke auf den <b>Vorschau-Button</b>, nachdem du deine Tabellencodes im Textfeld eingefügt hast.<br />
+&ordm; Von der Vorschau aus bearbeitest du alle <b>Titelnamen</b> und <b>Textfelder</b>, um deinen Beitrag anzupassen.<br />
+&ordm; Passe alle <b>prozentualen Breiten</b> an, um die Ansicht deiner Tabelle auszubalancieren, <b>Vorschau</b> und <b>Absenden</b>.
+</div>',
 /**
 * Titles by column numbers
 */
