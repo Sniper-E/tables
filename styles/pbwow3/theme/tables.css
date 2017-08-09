@@ -1,15 +1,17 @@
-/* Tables bbCode Extension - prosilver */
+/* Tables bbCode Extension - pbwow3 */
 
 /* Table background color (optional) */
 .tables1 {  }
+.tables1 th { color: #FFB017 !important; }
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
-h3.forabg { color: #FFFFFF; }
+h3.forabg { color: #FFB017; }
 
 /* Hiden selections block */
 #tables-button-selections { width: 100%;display: none; }
 #tables-button-guidelines a, #tables-guidelines-show a { cursor: pointer; }
-.tables-list { margin-bottom: 10px !important;cursor: help; }
+#tables-postingbuttons-switch.postingbuttons { background-color: #FFFFFF; }
+.tables-list { color: #FFFFFF;cursor: help; }
 .upper_group, .lower_group { width: 65px;display: inline-block;wrap: wrap; }
 
 /* Tables custom classes - Add all classes for every cell needed */
