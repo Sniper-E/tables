@@ -1,6 +1,7 @@
 /* Tables bbCode Extension  */
 
 /* Table background color (optional) */
+.table1 { margin-bottom: 4px; }
 .tables1 .table1 { background-color: #6DACD2;border-radius: 4px; }
 .tables1 .table1 img, .abbc3_button img { vertical-align: middle; }
 .tables1 .table1 i.fa-fw { cursor: pointer; }

@@ -1,16 +1,16 @@
-/* Tables bbCode Extension  */
+/* Tables bbCode Extension - aeroblack */
 
 /* Table background color (optional) */
-.tables1 { background-color: #D8D8D8; }
+.tables1, h3.forabg { background-color: #D8D8D8; }
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
-.postingbuttons img { margin-bottom: 2px; }
 
 /* Hiden selections block */
 #tables-button-selections { width: 98%;display: none; }
-#tables-postingbuttons-switch.postingbuttons { vertical-align: middle; }
-.upper_group { width: 65px;display: inline-block;wrap: wrap; }
-.lower_group { width: 65px;display: inline-block;wrap: wrap; }
+#tables-button-guidelines a, #tables-guidelines-show a { cursor: pointer; }
+.tables-list { padding: 6px;margin-bottom: 12px !important;border: 1px solid #444444;border-radius: 10px;box-shadow: 1px 1px 8px #555; }
+.tables-list:hover { background-color: #FFFFFF;cursor: help; }
+.upper_group, .lower_group { width: 65px;display: inline-block;wrap: wrap; }
 
 /* Tables custom classes - Add all classes for every cell needed */
 .null { }
@@ -22,11 +22,7 @@
 .textright { text-align: right; }
 
 /* Classes for cell borders */
-.border-trbl { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
-.border-trb { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999; }
-.border-rbl { border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
-.border-rb { border-right: 1px solid #999;border-bottom: 1px solid #999; }
-
-@media (max-width: 900px) {
-	#tables-button-selections { width: 100%;display: none; }
-}
+.btrbl { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
+.btrb { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999; }
+.brbl { border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
+.brb { border-right: 1px solid #999;border-bottom: 1px solid #999; }
