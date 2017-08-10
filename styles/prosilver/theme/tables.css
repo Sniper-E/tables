@@ -2,6 +2,9 @@
 
 /* Table background color (optional) */
 .tables1 {  }
+/* 
+.tables1 td { border: 1px solid #006BAB; }
+ */
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
 h3.forabg { color: #FFFFFF; }

@@ -2,6 +2,9 @@
 
 /* Table background color (optional) */
 .tables1, h3.forabg { background-color: #D8D8D8; }
+/* 
+.tables1 td { border: 1px solid #D8D8D8; }
+ */
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
 
@@ -22,7 +25,7 @@
 .textright { text-align: right; }
 
 /* Classes for cell borders */
-.btrbl { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
-.btrb { border-top: 1px solid #999;border-right: 1px solid #999;border-bottom: 1px solid #999; }
-.brbl { border-right: 1px solid #999;border-bottom: 1px solid #999;border-left: 1px solid #999; }
-.brb { border-right: 1px solid #999;border-bottom: 1px solid #999; }
+.btrbl { border-top: 1px solid #D8D8D8;border-right: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8;border-left: 1px solid #D8D8D8; }
+.btrb { border-top: 1px solid #D8D8D8;border-right: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8; }
+.brbl { border-right: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8;border-left: 1px solid #D8D8D8; }
+.brb { border-right: 1px solid #D8D8D8;border-bottom: 1px solid #D8D8D8; }
