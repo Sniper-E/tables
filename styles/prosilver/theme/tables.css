@@ -2,9 +2,9 @@
 
 /* Table background color (optional) */
 .tables1 {  }
-/* 
+/* Remove comment lines for borders in all tables by default
 .tables1 td { border: 1px solid #006BAB; }
- */
+ Remove this line also */
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
 h3.forabg { color: #FFFFFF; }

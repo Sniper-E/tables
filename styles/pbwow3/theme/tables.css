@@ -2,9 +2,9 @@
 
 /* Table background color (optional) */
 .tables1 {  }
-/* 
+/* Remove comment lines for borders in all tables by default
 .tables1 td { box-shadow: inset 0px 0px 1px 1px #888888; }
- */
+ Remove this line also */
 .tables1 th { color: #FFB017 !important; }
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
