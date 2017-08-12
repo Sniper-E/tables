@@ -2,9 +2,7 @@
 
 /* Table background color (optional) */
 .tables1, h3.forabg { background-color: #D8D8D8; }
-/* Remove comment lines for borders in all tables by default
 .tables1 td { border: 1px solid #D8D8D8; }
- Remove this line also */
 .tables1 img { vertical-align: middle; }
 .tables1 i.fa-fw { cursor: pointer; }
 
@@ -23,9 +21,3 @@
 .textleft { text-align: left; }
 .textcenter { text-align: center; }
 .textright { text-align: right; }
-
-/* Classes for cell borders */
-.btrbl { border-top: 1px solid #777777;border-right: 1px solid #777777;border-bottom: 1px solid #777777;border-left: 1px solid #777777; }
-.btrb { border-top: 1px solid #777777;border-right: 1px solid #777777;border-bottom: 1px solid #777777; }
-.brbl { border-right: 1px solid #777777;border-bottom: 1px solid #777777;border-left: 1px solid #777777; }
-.brb { border-right: 1px solid #777777;border-bottom: 1px solid #777777; }
