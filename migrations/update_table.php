@@ -1,11 +1,11 @@
 <?php
 /**
- * @package phpBB Extension - Tables
- * @copyright (c) 2015 Sniper_E - http://sniper-e.com
- * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+ * @ package phpBB Extension - Tables
+ * @ copyright (c) 2015 Sniper_E - http://sniper-e.com
+ * @ license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  *
- * @migration written by 3DI, http://3di.space/32 in 2016
- * @migration based on the hard work of Matt Friedman and VSE for ABBC3
+ * @ migration written by 3DI, http://3di.space/32 in 2016
+ * @ migration based on the hard work of Matt Friedman and VSE for ABBC3
  */
 
 namespace sniper\tables\migrations;
@@ -18,7 +18,7 @@ class update_table extends \phpbb\db\migration\migration
 	}
 	public function effectively_installed()
 	{
-		return isset($this->config['tables_version']) && version_compare($this->config['tables_version'], '2.1.2', '>=');
+		return isset($this->config['tables_version']) && version_compare($this->config['tables_version'], '2.1.4', '>=');
 	}
 	public function update_data()
 	{
@@ -50,7 +50,7 @@ class update_table extends \phpbb\db\migration\migration
 	/**
 	 * @var array An array of notebbcodes (tags) to be left behind
 	 */
-	$bbcode_tags = array('tables=', 'tr=', 'th-', 'td=', 'thead', 'tbody');
+	$bbcode_tags = array('tables=', 'tr=', 'th-', 'td=', 'thead', 'tbody', 'center', 'align=', 'float=');
 	// set to null the display on posting
 	$sql = 'UPDATE ' . BBCODES_TABLE . '
 		SET display_on_posting = 0
@@ -78,7 +78,7 @@ class update_table extends \phpbb\db\migration\migration
 		$bbcode_data = array(
 			'table=' => array(
 				'bbcode_match'		=> '[table={NUMBER},{IDENTIFIER}]{TEXT}[/table]',
-				'bbcode_tpl'		=> '<div class="forumbg forumbg-table tables1 {IDENTIFIER}" style="width: {NUMBER}%"><div class="inner"><table class="table1">{TEXT}</table></div></div>',
+				'bbcode_tpl'		=> '<div class="forumbg forumbg-table tables1 {IDENTIFIER} $tagLimit=0" style="width: {NUMBER}%"><div class="inner"><table class="table1">{TEXT}</table></div></div>',
 				'bbcode_helpline'	=> '',
 				'display_on_posting'=> 0,
 			),
@@ -111,6 +111,24 @@ class update_table extends \phpbb\db\migration\migration
 				'bbcode_tpl'		=> '<tbody>{TEXT}</tbody>',
 				'bbcode_helpline'	=> '',
 				'display_on_posting'=> 0,
+			),
+			'tfoot' => array(
+				'bbcode_match'		=> '[tfoot]{TEXT}[/tfoot]',
+				'bbcode_tpl'		=> '<tfoot>{TEXT}</tfoot>',
+				'bbcode_helpline'	=> '',
+				'display_on_posting'=> 0,
+			),
+			'align=' => array(
+				'bbcode_match'		=> '[align={IDENTIFIER}]{TEXT}[/align]',
+				'bbcode_tpl'		=> '<div style="width:100%;text-align:{IDENTIFIER}; display:block;">{TEXT}</div>',
+				'bbcode_helpline'	=> '',
+				'display_on_posting'=> 1,
+			),
+			'float=' => array(
+				'bbcode_match'		=> '[float={IDENTIFIER}]{TEXT}[/float]',
+				'bbcode_tpl'		=> '<div style="float:{IDENTIFIER}; padding:0 10px;">{TEXT}</div>',
+				'bbcode_helpline'	=> '',
+				'display_on_posting'=> 1,
 			),
 		);
 		foreach ($bbcode_data as $bbcode_name => $bbcode_array)

@@ -1,33 +1,37 @@
 /* Tables bbCode Extension  */
 
-/* Table background color (optional) */
-.table1 { margin-bottom: 4px; }
-.tables1 .table1 { background-color: #6DACD2;border-radius: 4px; }
-.tables1 .table1 img, .abbc3_button img { vertical-align: middle; }
-.tables1 .table1 i.fa-fw { cursor: pointer; }
-.postingbuttons img { margin-top: 1px; }
-
-/* Hiden selections block */
-#acp-tables-button-selections { width: 100%;display: none; }
-#acp-tables-button-guidelines a, #acp-tables-guidelines-show a { cursor: pointer; }
-#acp-tables-postingbuttons-switch.postingbuttons { vertical-align: middle;background-color: #dfdfdf; }
-#acp-tables-button-switch.button2 { height: 22px;vertical-align: middle; }
-.upper_group, .lower_group { width: 80px;display: inline-block;wrap: wrap; }
-.upper_group i, .lower_group i { margin-right: 3px; }
-
-/* Tables custom classes - Add any classe for every cell needed */
+/* Tables custom classes */
+div.tables1 {  }
+div.tables1 td { padding: 2px 5px 3px !important;border: 1px solid #006BAB;text-align: center; }
+div.tables1 th { text-align: center; }
+div.tables1 img { vertical-align: top !important; }
+div.tables1 i.fa-fw { cursor: pointer; }
+h3.forabg { color: #FFFFFF; }
 .null { }
+
+/* Use with table [table=tcenter,35] to center table */
 .tleft { float: left;margin-right: 6px; }
-.tright { float: right;margin-left: 6px; }
 .tcenter { margin: 0 auto; }
-.textleft { text-align: left; }
+.tright { float: right;margin-left: 6px; }
+
+/* Use with tr or td [td=textcenter,1] to center text */
+.textleft { text-align: left !important; }
 .textcenter { text-align: center; }
-.textright { text-align: right; }
+.textright { text-align: right !important; }
+th.textright { padding: 0 6px 4px 0 !important; }
 
-/* Tables responsive */
-@media (max-width: 950px) { #tables-button-selections { width: 100%;display: none; } }
+/* Table footer - if used */
+tfoot tr { background: #999999; }
+tfoot td { color: #FFFFFF !important;padding: 4px 6px; }
+tfoot a { color: #105289 !important;border-bottom: none !important; }
+tfoot a:hover { color: #AA0000 !important;background-color: transparent !important; }
 
-/* Tables preview background colors in acp */
-.bg1 { background-color: #ECF3F7; }
-.bg2 { background-color: #E1EBF2; }
-.bg1:hover, .bg2:hover { background-color: #CFE1F6; }
+/* table buttons */
+#acp-tables-pb-switch, #acp-tables-abbc3-switch { background-image:  url("./images/table.gif"); }
+
+/* Hidden menu selection blocks */
+#tables-button-selections { width: 100%;display: none; }
+#tables-button-guidelines a, #tables-guidelines-show a { cursor: question; }
+i.fa-table { margin: 0 1px 0 0; }
+.tables-list { margin-bottom: 10px !important;cursor: help; }
+.upper_group, .lower_group { width: 70px;display: inline-block;word-wrap: break-word; }

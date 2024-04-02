@@ -1,23 +1,36 @@
-/* Tables bbCode Extension - prosilver */
+/* Tables BBCode Extension - prosilver */
 
-/* Table background color (optional) */
-.tables1 {  }
-.tables1 td { border: 1px solid #006BAB; }
-.tables1 img { vertical-align: middle; }
-.tables1 i.fa-fw { cursor: pointer; }
+/* Tables custom classes */
+div.tables1 {  }
+div.tables1 td { padding: 2px 5px 3px !important;border: 1px solid #006BAB; }
+div.tables1 img {  }
+div.tables1 i.fa-fw { cursor: pointer; }
 h3.forabg { color: #FFFFFF; }
+.null { }
 
-/* Hiden selections block */
+/* Use with table [table=tcenter,35] to center table */
+.tleft { float: left;margin-right: 6px; }
+.tcenter { margin: 0 auto; }
+.tright { float: right;margin-left: 6px; }
+
+/* Use with tr or td [td=textcenter,1] to center text */
+.textleft { text-align: left; }
+.textcenter { border: 6px solid #006BAB;text-align: center; }
+.textright { text-align: right; }
+th.textright { padding: 0 6px 4px 0 !important; }
+
+/* Table footer - if used */
+.tfooter { text-align: center;cursor: pointer }
+tfoot tr { background: #0076b2; }
+tfoot td { color: #FFFFFF !important;padding: 4px 6px; }
+tfoot a { color: #105289 !important;border-bottom: none !important; }
+tfoot a:hover { color: #AA0000 !important;background-color: transparent !important; }
+
+/* table buttons */
+.pb_tables, .abbc3_table { background-image:  url("./images/table.gif");margin-bottom: 3px; }
+
+/* Hidden menu selection blocks */
 #tables-button-selections { width: 100%;display: none; }
 #tables-button-guidelines a, #tables-guidelines-show a { cursor: pointer; }
 .tables-list { margin-bottom: 10px !important;cursor: help; }
-.upper_group, .lower_group { width: 65px;display: inline-block;wrap: wrap; }
-
-/* Tables custom classes - Add all classes for every cell needed */
-.null { }
-.tleft { float: left;margin-right: 6px; }
-.tright { float: right;margin-left: 6px; }
-.tcenter { margin: 0 auto; }
-.textleft { text-align: left; }
-.textcenter { text-align: center; }
-.textright { text-align: right; }
+.upper_group, .lower_group { width: 65px;display: inline-block;word-wrap: break-word; }

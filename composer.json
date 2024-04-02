@@ -1,32 +1,36 @@
 {
 	"name": "sniper/tables",
 	"type": "phpbb-extension",
-	"description": "Inserts a table up to 7 columns, 10 rows in your post.",
-	"homepage": "http://www.sniper-e.com",
-	"version": "2.1.2",
-	"time": "2015-01-01",
+	"description": "Inserts a table up to 7 columns and 10 rows in your post.",
+	"homepage": "https://www.sniper-e.com",
+	"version": "2.1.4",
+	"time": "2020-01-12",
 	"keywords": ["phpbb", "extension", "tables"],
 	"license": "GPL-2.0",
 	"authors": [
 		{
 			"name": "Sniper_E",
-			"email": "sniper@sniper-e.com",
-			"homepage": "http://www.sniper-e.com",
-			"role": "Developer"
+			"homepage": "https://sniper-e.com",
+			"role": "Extension Developer"
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=7.1.3",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
 	},
 	"extra": {
 		"display-name": "Tables",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.2.0"
+			"phpbb/phpbb": "3.3.0, >="
 		},
 		"version-check": {
-			"host": "sniper-e.com",
+			"host": "www.sniper-e.com",
 			"directory": "/versions",
-			"filename": "tables_version.json"
+			"filename": "tables_version.json",
+			"ssl": true
 		}
 	}
 }

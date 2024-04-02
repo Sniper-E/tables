@@ -1,8 +1,8 @@
 <?php
 /**
-* @package phpBB Extension - Tables
-* @copyright (c) 2015 Sniper_E - http://sniper-e.com
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* @ package phpBB Extension - Tables
+* @ copyright (c) 2015 Sniper_E - http://sniper-e.com
+* @ license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
 namespace sniper\tables\event;
@@ -45,20 +45,20 @@ class listener implements EventSubscriberInterface
 		\phpbb\controller\helper $helper,
 		\phpbb\extension\manager $extension_manager)
 	{
-		$this->user				= $user;
-        $this->template         = $template;
-		$this->auth				= $auth;
-		$this->config				= $config;
-		$this->helper 				= $helper;
-		$this->extension_manager	= $extension_manager;
+		$this->user              = $user;
+        $this->template          = $template;
+		$this->auth              = $auth;
+		$this->config            = $config;
+		$this->helper            = $helper;
+		$this->extension_manager = $extension_manager;
 	}
 
 	public static function getSubscribedEvents()
 	{
 		return array(
-			'core.permissions'					=> 'permissions',
-			'core.user_setup'					=> 'load_language_on_setup',
-			'core.page_header_after'			=> 'page_header_after',
+			'core.permissions'       => 'permissions',
+			'core.user_setup'        => 'load_language_on_setup',
+			'core.page_header_after' => 'page_header_after',
 		);
 	}
 

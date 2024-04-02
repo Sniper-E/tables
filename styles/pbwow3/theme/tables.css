@@ -12,8 +12,9 @@ h3.forabg { color: #FFB017; }
 #tables-button-selections { width: 100%;display: none; }
 #tables-button-guidelines a, #tables-guidelines-show a { cursor: pointer; }
 #tables-postingbuttons-switch.postingbuttons { background-color: #FFFFFF; }
+#tables-abbc3button-switch.abbc3_button { box-shadow: none !important; }
 .tables-list { color: #FFFFFF;cursor: help; }
-.upper_group, .lower_group { width: 65px;display: inline-block;wrap: wrap; }
+.upper_group, .lower_group { width: 65px;display: inline-block;word-wrap: break-word; }
 
 /* Tables custom classes - Add all classes for every cell needed */
 .null { }
